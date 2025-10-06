@@ -1,7 +1,9 @@
+import BannerSlider from "./components/BannerSlider";
+
 export default function Home(): JSX.Element {
   return (
-    <div>
-      
+    <div className="min-h-screen mt-2">
+        <BannerSlider />
     </div>
   );
 }

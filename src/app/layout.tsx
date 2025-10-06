@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import MenuBar from "./components/MenuBar";
+import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
   title: "E-commerce App",
@@ -10,7 +12,9 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
   return (
     <html lang="en">
       <body>
+        <MenuBar />
         {children}
+        <Footer />
       </body>
     </html>
   );
