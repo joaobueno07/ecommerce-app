@@ -1,12 +1,12 @@
 import { Carousel } from "antd";
 
-import bannerDesktop1 from "../../../public/img/banners-desktop/banner-1.png";
-import bannerDesktop2 from "../../../public/img/banners-desktop/banner-2.png";
-import bannerDesktop3 from "../../../public/img/banners-desktop/banner-3.png";
+import bannerDesktop1 from "../../../../public/img/banners-desktop/banner-1.png";
+import bannerDesktop2 from "../../../../public/img/banners-desktop/banner-2.png";
+import bannerDesktop3 from "../../../../public/img/banners-desktop/banner-3.png";
 
-import bannerMobile1 from "../../../public/img/banners-mobile/banner-mobile-1.png";
-import bannerMobile2 from "../../../public/img/banners-mobile/banner-mobile-2.png";
-import bannerMobile3 from "../../../public/img/banners-mobile/banner-mobile-3.png";
+import bannerMobile1 from "../../../../public/img/banners-mobile/banner-mobile-1.png";
+import bannerMobile2 from "../../../../public/img/banners-mobile/banner-mobile-2.png";
+import bannerMobile3 from "../../../../public/img/banners-mobile/banner-mobile-3.png";
 
 import Image from "next/image";
 

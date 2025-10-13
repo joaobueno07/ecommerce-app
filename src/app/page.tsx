@@ -1,4 +1,4 @@
-import BannerSlider from "./components/BannerSlider";
+import BannerSlider from "./components/banners/BannerSlider";
 
 export default function Home(): JSX.Element {
   return (

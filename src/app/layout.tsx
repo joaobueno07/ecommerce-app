@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import MenuBar from "./components/MenuBar";
-import Footer from "./components/Footer";
+import MenuBar from "./components/home/MenuBar";
+import Footer from "./components/home/Footer";
 
 export const metadata: Metadata = {
   title: "E-commerce App",

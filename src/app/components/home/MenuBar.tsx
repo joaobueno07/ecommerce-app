@@ -4,11 +4,12 @@ import { CircleUserRound, Menu, ShoppingBag } from "lucide-react";
 import { Badge, Drawer } from 'antd';
 import { useState } from "react";
 import Image from "next/image";
-import reactLogo from "../../../public/img/logo/react-logo.svg";
+import reactLogo from "../../../../public/img/logo/react-logo.svg";
+import Link from "next/link";
 
 export default function MenuBar(): JSX.Element {
     const [openDrawer, setOpenDrawer] = useState<boolean>(false);
-    
+
     return (
         <div className="w-full h-16 border flex justify-center">
             <div className="w-full flex justify-between items-center lg:w-4/6">
@@ -17,15 +18,28 @@ export default function MenuBar(): JSX.Element {
                 </div>
 
                 <div className="w-2/4 flex justify-center items-center sm:w-1/12 sm:justify-start">
-                    <Image src={reactLogo} width={40} height={40} alt=""/>    
+                    <Link href="/">
+                        <Image src={reactLogo} width={40} height={40} alt=""/>
+                    </Link>    
                 </div>    
 
                 <div className="hidden sm:flex justify-center w-4/6">
                     <ul className="w-full flex justify-evenly">
-                       <li>Produtos</li>
-                       <li>Categorias</li>
-                       <li>Departamentos</li>
-                       <li>Promoções</li> 
+                        <Link href="/produtos">
+                            <li>Produtos</li>
+                        </Link>
+
+                        <Link href="/categorias">
+                            <li>Categorias</li>
+                        </Link>
+
+                        <Link href="/">
+                            <li>Departamentos</li>
+                        </Link>
+
+                        <Link href="/">
+                            <li>Promoções</li> 
+                        </Link>
                     </ul>
                 </div>
 
@@ -38,8 +52,8 @@ export default function MenuBar(): JSX.Element {
                 </div>
             </div>
 
-
-            <Drawer open={openDrawer}  title="Menu" placement="left" onClose={() => setOpenDrawer(false)}/>
+            <Drawer open={openDrawer} className="sm:hidden" title="Menu" placement="left" onClose={() => setOpenDrawer(false)}/>
+            <Drawer> </Drawer>
         </div>
     );
 }

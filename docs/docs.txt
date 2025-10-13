@@ -1,0 +1,18 @@
+Documentação para entender como funciona o sistema E-commerce App
+
+Estrutura de Pastas
+- organizar de acordo com a funcionalidade principal, por exemplo:
+    - produto (tudo relacionado a produto)
+    - carrinho (tudo relacionado a carrinho)
+    - para rotas da aplicação,  utilizar idioma português
+    - para api, utilizar idioma inglês
+    - para pastas em geral, utilizar o idioma inglês
+    - para funções e componentes, utilizar o idioma inglês
+
+- para criação de tipos ou funções utilitárias que serão utilizadas em vários arquivos,
+    deve ser separado por funcionalidade principal, por exemplo:
+
+    - @Types
+        - product
+        - order
+        - categories
