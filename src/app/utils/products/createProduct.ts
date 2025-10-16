@@ -1,8 +1,11 @@
-export async function createProduct(url: string, {arg}: {arg: any}) {
+import { IProduct } from "@/app/@Types/product/IProduct";
+
+export async function createProduct(url: string, { arg }: { arg: IProduct }): Promise<IProduct> {
+    console.log(arg);
     const response = await fetch(url, {
         method: "POST",
-        body: arg
+        body: JSON.stringify(arg)
     });
 
-    return response;
+    return response.json();
 }
